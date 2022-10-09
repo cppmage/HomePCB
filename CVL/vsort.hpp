@@ -29,7 +29,7 @@
 
 		vs_t LinesVectorCreate ( vs_iterator& ,vs_iterator& ,vpss_t& );
 		/*  * This function will create vector of move positions .This positions are present in strings coordinates.
-		 	* Start positions string are ends "...D2*" and shpindel should be up.If string ends "...D1*",then shpindel should be down.
+		    * Start positions string are ends "...D2*" and shpindel should be up.If string ends "...D1*",then shpindel should be down.
 		    @ __firstparam -> begin iterator of vector string type 
 		    @ __secondparam -> end iterator of vector string type
 			@ __thirdparam -> reference to vector of pair < repeat_point_counter,point_string > type
