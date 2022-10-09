@@ -23,8 +23,8 @@
 	 	/*  * This function finding start positions in range first and last iterators of unsorted string vector of move positions ,
 		    * then counting all points in moving , sorting them and return . 
 		    
-		    @ firstparam -> reference of begin iterator in string vector  	
-	 	    @ secondparam -> reference of end iteraor in string vector
+		    @ firstparam -> reference at begin iterator in string vector  	
+	 	    @ secondparam -> reference at end iteraor in string vector
 		    @ Return sorted vector of pairs of points counter and startposition
 	 	*/
 
