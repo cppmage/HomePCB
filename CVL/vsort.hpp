@@ -32,8 +32,8 @@
 		/*  * This function will create vector of move positions. This positions are present in strings coordinates.
 		    * Start positions string are ends "...D2*" and shpindel should be up. If string ends "...D1*", then shpindel should be down.
 		    
-		    @ firstparam -> reference at begin iterator in vector string type. 
-		    @ secondparam -> reference at end iterator in vector string type.
+		    @ firstparam -> reference at begin iterator in vector string . 
+		    @ secondparam -> reference at end iterator in vector string .
 		    @ thirdparam -> reference at vector of pair of repeat_point_counter and start point string.
 		    @ Return sorted vector of move positions.
 		 */
