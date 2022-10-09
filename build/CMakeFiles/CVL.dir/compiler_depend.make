@@ -215,6 +215,11 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CVL.cpp.o: /home/hwmi3/Codi
   /usr/include/c++/12.2.0/algorithm \
   /usr/include/c++/12.2.0/pstl/glue_algorithm_defs.h \
   /usr/include/c++/12.2.0/pstl/execution_defs.h \
+  /usr/include/c++/12.2.0/fstream \
+  /usr/include/c++/12.2.0/bits/codecvt.h \
+  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
+  /usr/include/c++/12.2.0/bits/fstream.tcc \
   /usr/include/boost/filesystem/operations.hpp \
   /usr/include/boost/filesystem/config.hpp \
   /usr/include/boost/config.hpp \
@@ -308,7 +313,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CVL.cpp.o: /home/hwmi3/Codi
   /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/time_members.h \
   /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/messages_members.h \
   /usr/include/libintl.h \
-  /usr/include/c++/12.2.0/bits/codecvt.h \
   /usr/include/c++/12.2.0/bits/locale_facets_nonio.tcc \
   /usr/include/c++/12.2.0/bits/locale_conv.h \
   /usr/include/boost/filesystem/detail/header.hpp \
@@ -559,11 +563,7 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CVL.cpp.o: /home/hwmi3/Codi
   /usr/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp \
   /usr/include/boost/smart_ptr/detail/atomic_count_gcc_atomic.hpp \
   /usr/include/boost/filesystem/directory.hpp \
-  /usr/include/boost/core/scoped_enum.hpp \
-  /usr/include/c++/12.2.0/fstream \
-  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
-  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
-  /usr/include/c++/12.2.0/bits/fstream.tcc
+  /usr/include/boost/core/scoped_enum.hpp
 
 CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CreatingVectorsList.cpp.o: /home/hwmi3/Coding/Cpp/HomePCB/CVL/CreatingVectorsList.cpp \
   /usr/include/stdc-predef.h \
@@ -779,6 +779,11 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CreatingVectorsList.cpp.o: 
   /usr/include/c++/12.2.0/algorithm \
   /usr/include/c++/12.2.0/pstl/glue_algorithm_defs.h \
   /usr/include/c++/12.2.0/pstl/execution_defs.h \
+  /usr/include/c++/12.2.0/fstream \
+  /usr/include/c++/12.2.0/bits/codecvt.h \
+  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
+  /usr/include/c++/12.2.0/bits/fstream.tcc \
   /usr/include/boost/filesystem/operations.hpp \
   /usr/include/boost/filesystem/config.hpp \
   /usr/include/boost/config.hpp \
@@ -872,7 +877,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CreatingVectorsList.cpp.o: 
   /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/time_members.h \
   /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/messages_members.h \
   /usr/include/libintl.h \
-  /usr/include/c++/12.2.0/bits/codecvt.h \
   /usr/include/c++/12.2.0/bits/locale_facets_nonio.tcc \
   /usr/include/c++/12.2.0/bits/locale_conv.h \
   /usr/include/boost/filesystem/detail/header.hpp \
@@ -1123,11 +1127,7 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CreatingVectorsList.cpp.o: 
   /usr/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp \
   /usr/include/boost/smart_ptr/detail/atomic_count_gcc_atomic.hpp \
   /usr/include/boost/filesystem/directory.hpp \
-  /usr/include/boost/core/scoped_enum.hpp \
-  /usr/include/c++/12.2.0/fstream \
-  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
-  /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
-  /usr/include/c++/12.2.0/bits/fstream.tcc
+  /usr/include/boost/core/scoped_enum.hpp
 
 CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp \
   /usr/include/stdc-predef.h \
@@ -1348,8 +1348,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /home/hwmi3/Coding/Cpp/HomePCB/CVL/CreatingVectorsList.cpp:
 
-/usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:
-
 /usr/include/boost/core/scoped_enum.hpp:
 
 /usr/include/boost/filesystem/directory.hpp:
@@ -1374,7 +1372,13 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/boost/system/system_category.hpp:
 
-/usr/include/c++/12.2.0/bits/atomic_base.h:
+/usr/include/boost/system/errc.hpp:
+
+/usr/include/boost/system/error_condition.hpp:
+
+/usr/include/boost/system/error_code.hpp:
+
+/usr/include/boost/filesystem/exception.hpp:
 
 /usr/include/c++/12.2.0/ext/string_conversions.h:
 
@@ -1417,6 +1421,8 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
 
 /usr/include/boost/io/detail/ostream_guard.hpp:
+
+/usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/include/c++/12.2.0/pstl/glue_algorithm_defs.h:
 
@@ -1488,8 +1494,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/boost/system/detail/snprintf.hpp:
 
-/usr/include/boost/type_traits/is_void.hpp:
-
 /usr/include/bits/types/error_t.h:
 
 /usr/include/asm-generic/errno-base.h:
@@ -1501,6 +1505,8 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 /usr/include/bits/stdint-uintn.h:
 
 /usr/include/c++/12.2.0/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/12.2.0/bits/atomic_base.h:
 
 /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/c++io.h:
 
@@ -1529,6 +1535,10 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 /usr/include/c++/12.2.0/bits/locale_classes.tcc:
 
 /usr/include/endian.h:
+
+/usr/include/c++/12.2.0/bits/codecvt.h:
+
+/usr/include/c++/12.2.0/bits/hash_bytes.h:
 
 /usr/include/stdint.h:
 
@@ -1590,6 +1600,10 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/boost/mpl/aux_/config/eti.hpp:
 
+/usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
+
+/usr/include/c++/12.2.0/bits/move.h:
+
 /usr/include/bits/stdlib-float.h:
 
 /usr/include/bits/typesizes.h:
@@ -1603,12 +1617,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 /usr/include/c++/12.2.0/bits/stl_iterator_base_funcs.h:
 
 /usr/include/boost/mpl/if.hpp:
-
-/usr/include/c++/12.2.0/cstring:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/boost/mpl/aux_/config/compiler.hpp:
 
 /usr/include/c++/12.2.0/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
@@ -1694,6 +1702,12 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
+/usr/include/bits/timesize.h:
+
+/usr/include/c++/12.2.0/cstring:
+
+/usr/include/boost/mpl/aux_/config/compiler.hpp:
+
 /usr/include/stdc-predef.h:
 
 /usr/include/sys/select.h:
@@ -1744,14 +1758,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/c++/12.2.0/exception:
 
-/usr/include/boost/config/stdlib/libstdcpp3.hpp:
-
-/usr/include/boost/system/detail/generic_category_message.hpp:
-
-/usr/include/boost/preprocessor/list/limits/fold_left_256.hpp:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
 /usr/include/linux/close_range.h:
 
 /usr/include/boost/filesystem/config.hpp:
@@ -1787,8 +1793,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 /usr/include/boost/system/detail/std_category.hpp:
 
 /usr/include/bits/floatn.h:
-
-/usr/include/boost/system/detail/error_category_impl.hpp:
 
 /usr/include/linux/errno.h:
 
@@ -1878,6 +1882,8 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/c++/12.2.0/compare:
 
+/usr/include/boost/type_traits/is_void.hpp:
+
 /usr/include/bits/types/struct_timespec.h:
 
 /usr/include/boost/iterator/iterator_facade.hpp:
@@ -1931,6 +1937,18 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 /usr/include/boost/mpl/apply_fwd.hpp:
 
 /usr/include/bits/setjmp.h:
+
+/usr/include/boost/preprocessor/list/limits/fold_left_256.hpp:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/boost/config/stdlib/libstdcpp3.hpp:
+
+/usr/include/boost/system/detail/generic_category_message.hpp:
+
+/usr/include/boost/mpl/bool.hpp:
+
+/usr/include/boost/filesystem/detail/header.hpp:
 
 /usr/include/boost/preprocessor/logical/not.hpp:
 
@@ -2008,9 +2026,9 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/boost/filesystem/operations.hpp:
 
-/usr/include/boost/system/detail/generic_category.hpp:
-
 /usr/include/boost/config/workaround.hpp:
+
+/usr/include/boost/system/detail/generic_category.hpp:
 
 /usr/include/c++/12.2.0/bits/ptr_traits.h:
 
@@ -2025,6 +2043,8 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 /usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/12.2.0/bits/predefined_ops.h:
+
+/usr/include/boost/system/detail/error_category_impl.hpp:
 
 /usr/include/string.h:
 
@@ -2124,10 +2144,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/c++/12.2.0/bits/list.tcc:
 
-/usr/include/c++/12.2.0/bits/hash_bytes.h:
-
-/usr/include/c++/12.2.0/bits/codecvt.h:
-
 /usr/include/boost/preprocessor/logical/compl.hpp:
 
 /usr/include/c++/12.2.0/bits/locale_facets_nonio.tcc:
@@ -2137,10 +2153,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 /usr/include/boost/config/compiler/gcc.hpp:
 
 /usr/include/boost/iterator/interoperable.hpp:
-
-/usr/include/boost/filesystem/detail/header.hpp:
-
-/usr/include/boost/mpl/bool.hpp:
 
 /usr/include/boost/mpl/bool_fwd.hpp:
 
@@ -2290,10 +2302,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/boost/preprocessor/tuple/rem.hpp:
 
-/usr/include/c++/12.2.0/bits/move.h:
-
-/usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
-
 /usr/include/c++/12.2.0/cerrno:
 
 /usr/include/boost/preprocessor/variadic/elem.hpp:
@@ -2422,8 +2430,6 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 
 /usr/include/boost/mpl/aux_/config/has_apply.hpp:
 
-/usr/include/boost/filesystem/exception.hpp:
-
 /usr/include/boost/mpl/aux_/msvc_never_true.hpp:
 
 /usr/include/boost/mpl/bind.hpp:
@@ -2467,9 +2473,3 @@ CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o: /home/hwmi3/Co
 /usr/include/c++/12.2.0/utility:
 
 /usr/include/c++/12.2.0/bits/stl_relops.h:
-
-/usr/include/boost/system/error_code.hpp:
-
-/usr/include/boost/system/error_condition.hpp:
-
-/usr/include/boost/system/errc.hpp:
