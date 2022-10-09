@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++17 -Wall -rdynamic CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CreatingVectorsList.cpp.o CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CVL.cpp.o CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o -o CVL  /usr/lib/libboost_filesystem.so.1.80.0 /usr/lib/libboost_atomic.so.1.80.0 
