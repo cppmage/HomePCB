@@ -1,26 +1,26 @@
 #include "vsort.hpp"
 
-vpss_t StartPositionFinder(vs_iterator& firstit,vs_iterator& lastit){
+vpss_t StartPositionFinder(vs_iterator& FirstIt,vs_iterator& LastIt){
 	vpss_t startpoints;
 	//Runing on d2 positions only
-	for(auto D2=firstit; D2!=lastit; D2+=2){
+	for(auto D2=FirstIt; D2!=LastIt; D2+=2){
 		//Local value definitions
 		size_t D2_repeat_counter=0;
 		string D2_string=*D2;
 
-		for(auto D1=firstit; D1!=lastit; ){
+		for(auto D1=FirstIt; D1!=LastIt; ){
 			//Searching start points
-			D1=find_if(firstit, lastit, [&D2_string](std::string& str){
+			D1=find_if(FirstIt, LastIt, [&D2_string](std::string& str){
 				// "...D01*->\n" =>_sub_2_=> "...D0->1*\n" && "...D0->2*\n" != "...D0->1*\n"
 				return D2_string.substr(0,19)==str.substr(0,19) && str.at(str.size()-2)!= D2_string.at( D2_string.size()-2 ) ;});
-			if( D1 != lastit ){
+			if( D1 != LastIt ){
 				//"...D1*" point founted and if cordinates of this point equal start point ,then quit.
 				if( --D1; *D2 == *D1 )break;
 				D2_string = *D1;
 				++D2_repeat_counter;
 			}
 		}
-		//Start positions was founted and locate in d2_string.
+		//Start positions was founted and locate in D2_string.
 		auto OldStartPointIt=find_if(startpoints.begin(), startpoints.end(), [&](auto& pis){return pis.second == D2_string;});
 
 		//Start point add if not exist in startpoints vector.
@@ -61,9 +61,9 @@ vs_t LinesVectorCreate ( vs_iterator& FirstIt, vs_iterator& LastIt, vpss_t& star
 					str.at(str.size()-2)!= start_point.at(start_point.size()-2);});
 
 				//Search d2 in startpoints and if it founted delete this point frome d2_vector ;
-				auto d2_founted=find_if(startpoints.begin(),startpoints.end()-1,[&D2Find](pss_t& pis){
+				auto D2Founted=find_if(startpoints.begin(),startpoints.end()-1,[&D2Find](pss_t& pis){
 					return *D2Find==pis.second; });
-				if(d2_founted != startpoints.end()-1) startpoints.erase(d2_founted);
+				if(D2Founted != startpoints.end()-1) startpoints.erase(D2Founted);
 				
 				//Push back next d2 point into string vector "vs" .
 				if(D2Find!=LastIt && *D2Find!=startpoints.back().second){

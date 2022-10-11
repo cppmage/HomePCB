@@ -53,54 +53,58 @@ vvs_t AperturesIntoVector (std::ifstream& filename){
 //This function sorting data by apertures and return vector of string vector
 	vvs_t vvs;
 	for(std::string line =""; getline(filename,line); ){
+
 		/*Add_apertures_into_vector*/
-		if(line == "G04 APERTURE LIST*"){
+		if(line == "G04 APERTURE LIST*")
 			for(size_t acounter=0; getline(filename,line) && line!="G04 APERTURE END LIST*"; ++acounter){
 				vvs.push_back(vs_t {line});
 				std::cout << "  * Vector ["<<acounter<<"][0] = \""<< line <<"\" was created." << std::endl;
 			}
-		}
+		
 		/*Add_positioins_to_apertures*/
-		else if(line[0]=='D'){
+		else if(line[0]=='D')
 			for_each(vvs.begin(),vvs.end(),[&](vs_t& subvs){
 				if(subvs[0].substr(3,3)==line.substr(0,3))
 					for(; getline(filename,line) && line[0]!='D' && line!="M02*"; subvs.push_back(line));
 			});
-		}
+		
 		//Check line on data end
 		if(line=="M02*") break;
 	}
 	return vvs;
 }
 
-void FilesWork( const std::string& ifilename,const std::string& ofilename){
+void FilesWork( const string& ifile_path ){
+
+	string file_path=ifile_path.substr(0,ifile_path.find_last_of('.'));
 	//Create fstreams with RAII
-	std::ifstream filename;
-	std::ofstream CVLfile;
+	std::ifstream input_file;
+	std::ofstream svl_file;
 	
 	// settings bits
-	filename.exceptions(std::ifstream::badbit | std::ifstream::failbit );
-	CVLfile.exceptions(std::ifstream::badbit | std::ifstream::failbit );
+	input_file.exceptions(std::ifstream::badbit | std::ifstream::failbit );
+	svl_file.exceptions(std::ifstream::badbit | std::ifstream::failbit );
 	
 	try{
-		if(ifilename.substr(ifilename.find_last_of('.')) != ".gbr") 
-			throw string {"File \" "+ ifilename + " \" with not \"gbr\" extention."};
+		if(ifile_path.substr(ifile_path.find_last_of('.')) != ".gbr") 
+			throw string {"File \" "+ ifile_path + " \" with not \"gbr\" extention."};
+
 		//Try open input files 	
-		cout << "* Try opening file... " << endl;
-			filename.open(ifilename);
-		cout << "  * File was opened. " << endl;
+		input_file.open(ifile_path);
+		cout << "  * File opened. " << endl;
 		
 		//Sorting points one by one like chains
-		auto vs=LinePointsMoveUp(AperturesIntoVector(filename));
+		auto vs=LinePointsMoveUp(AperturesIntoVector(input_file));
 		VectorSort(vs);
 		
 		//Try open output file and write linepoints into it
-		CVLfile.open(ofilename);
+		svl_file.open(file_path + ".svl");
 			for(auto& v:vs)
 				for(auto& s:v)
-					CVLfile << s << endl;
-		//Message about datat was writed	
-		cout << "* Result was writed into " << ofilename << endl;
+					svl_file << s << endl;
+
+		//Message about data was writed	
+		cout << "* Result was writed into " << file_path << ".svl" << endl;
 	}
 	catch( const std::exception &ex ){
 		cout << "Program down..." << endl << "[ Error ]: " << ex.what() << endl;

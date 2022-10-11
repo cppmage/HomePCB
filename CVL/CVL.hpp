@@ -8,7 +8,7 @@
 		#include <iostream>
 		#include <string>
 		#include <vector>
-
+		
 		#include <iterator>
 		#include <algorithm>
 	
@@ -19,7 +19,7 @@
 		using std::cin;
 		using std::endl;
 
-		void FilesWork( const std::string& ,const std::string& );
+		void FilesWork( const string& );
 		void VectorSort(vvs_t &);
 	
 #endif
