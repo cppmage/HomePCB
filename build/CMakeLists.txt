@@ -1,7 +1,0 @@
-cmake_minimum_required(VERSION 3.3)
-project(HomePCB )
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall")
-find_package(Boost COMPONENTS  filesystem REQUIRED)
-include_directories(${Boost_INCLUDE_DIRS})
-add_executable(CVL "../CVL/CreatingVectorsList.cpp" "../CVL/CVL.cpp" "../CVL/vsort.cpp" )
-target_link_libraries(CVL ${Boost_LIBRARIES})

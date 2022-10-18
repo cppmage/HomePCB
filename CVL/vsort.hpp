@@ -16,16 +16,12 @@
 		#include <iostream>
 		#include <vector>
 		#include <string>
-		
-		#include <functional>
 		#include <iterator>
 		#include <algorithm>
 
-		//conteiners declarations
 		using std::string;
 		using std::vector;
 		
-		//type_declarations
 		using vs_t = vector <string>;	
 		using vvs_t = vector <vs_t>;
 		using vs_iterator = vs_t::iterator;
