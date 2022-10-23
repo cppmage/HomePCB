@@ -1,0 +1,3 @@
+/home/hwmi3/Coding/Cpp/HomePCB/CSMV/build/CMakeFiles/csmv.dir
+/home/hwmi3/Coding/Cpp/HomePCB/CSMV/build/CMakeFiles/edit_cache.dir
+/home/hwmi3/Coding/Cpp/HomePCB/CSMV/build/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++17 -Wall -rdynamic CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/CreateVectorsList.cpp.o CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/cmv.cpp.o CMakeFiles/CVL.dir/home/hwmi3/Coding/Cpp/HomePCB/CVL/vsort.cpp.o -o CVL 
